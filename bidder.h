@@ -11,14 +11,12 @@ class Bidder {
     int bid;
     string name;
 
-
 public:
     explicit Bidder(int bid, string name): bid(bid), name(std::move(name)) {}
 
     int getBid() {
         return this->bid;
     }
-
     string getName() {
         return this->name;
     }

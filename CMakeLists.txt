@@ -3,4 +3,4 @@ project(data_structures_3)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(data_structures_3 main.cpp heap.h)
+add_executable(data_structures_3 main.cpp heap.h priority_queue.h)
