@@ -1,3 +1,11 @@
+/*
+ Created by :
+ Name: Gil Semo
+ ID: 315539031
+ ------------------
+ Name: Aviv Moshe
+ ID: 316013739
+ */
 #include <utility>
 
 #ifndef DATA_STRUCTURES_3_BIDDER_H

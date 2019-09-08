@@ -1,3 +1,12 @@
+/*
+ Created by :
+ Name: Gil Semo
+ ID: 315539031
+ ------------------
+ Name: Aviv Moshe
+ ID: 316013739
+ */
+
 #include <iostream>
 #include <ctime>
 #include "heap.h"
@@ -12,19 +21,22 @@ inline int right(int i)
 {
     return 2 * i + 2;
 }
-int kBig(Heap &h,int k)
+int KBig(Heap &h,int k)
 {
     Priority_q p;
+    if(k>h.GetSize())
+    {
+        cout<<"The K is bigger than lottery size"<<endl;
+        return -1;
+    }
     p.Push(h[0]);
     for (int i = 0; i <k - 1; ++i) {
-
         int l = left(i), r = right(i);
         p.Pop();
         if(l <h.GetSize())
             p.Push(h[l]);
         if(r<h.GetSize())
             p.Push(h[r]);
-
     }
     cout<<"The "<<k<<" bid is :"<<p.Top().getBid()<<endl;
     return p.Top().getBid();
@@ -53,7 +65,7 @@ int main() {
     Heap heap;
     init_lottery(heap,10);
     heap.print();
-    kBig(heap,2);
+    KBig(heap,20);
     Max_bid(heap);
     //cout<< x;
 }

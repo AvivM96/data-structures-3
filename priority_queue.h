@@ -1,4 +1,11 @@
-
+/*
+ Created by :
+ Name: Gil Semo
+ ID: 315539031
+ ------------------
+ Name: Aviv Moshe
+ ID: 316013739
+ */
 #include "heap.h"
 #include "bidder.h"
 #ifndef DATA_STRUCTURES_3_PRIORITY_QUEUE_H
